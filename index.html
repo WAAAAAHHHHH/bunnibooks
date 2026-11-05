@@ -44,11 +44,10 @@
   <img src="mascot.jpg" alt="mascot" style="width:180px; margin: 0.5rem 0 1rem;">
   <p>Request manga, get a sweet deal!</p>
 
-  <form action="https://formsubmit.co/ichi@mail.ee" method="POST">
-    <input type="hidden" name="_subject" value="New Bunnibooks Request!">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://bunnibooks.shop">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="fe14bb51-f46d-4b70-9ab0-ca4ede698500">
+    <input type="hidden" name="subject" value="New Bunnibooks Request!">
+    <input type="hidden" name="redirect" value="https://bunnibooks.shop">
 
     <label>Your Name</label><br>
     <input type="text" name="name" required placeholder="Your name">
