@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunnibooks</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #b4998a;
+    color: #2e1f14;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  h1 { font-size: 2rem; color: #2e1f14; }
+  p { color: #3d2b1e; }
+  form { max-width: 400px; margin: 0 auto; text-align: left; }
+  input, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.4rem 0 1rem;
+    border: 2px solid #e8b49a;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f2e0d0;
+    color: #2e1f14;
+  }
+  button {
+    background: #c0594a;
+    color: #fff5f0;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover { background: #a0432e; }
+  label { font-size: 0.9rem; font-weight: bold; color: #2e1f14; }
+</style>
+</head>
+<body>
+  <h1>Bunnibooks</h1>
+  <img src="mascot.jpg" alt="mascot" style="width:180px; margin: 0.5rem 0 1rem;">
+  <p>Request manga, get a sweet deal!</p>
+
+  <form action="https://formsubmit.co/ichi@mail.ee" method="POST">
+    <input type="hidden" name="_subject" value="New Bunnibooks Request!">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label>Your Name</label><br>
+    <input type="text" name="name" required placeholder="Your name">
+
+    <label>Your Email</label><br>
+    <input type="email" name="email" required placeholder="you@email.com">
+
+    <label>Books You Want</label><br>
+    <textarea name="books" required placeholder="Which manga?"></textarea>
+
+    <label>Anything Else?</label><br>
+    <textarea name="notes" placeholder="Budget, questions..."></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
+</body>
+</html>
